@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DORAEMON - Portfolio</title>
+
+       <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: monospace, serif;
+            line-height: 1.6;
+            background-color: #000080;
+            color: #808080;
+        }
+
+        /* Header */
+        header {
+            background-color: #000080;
+            color: #FFFFFF;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* About Section */
+        #about {
+            background-color: #ADD8E6;
+            padding: 1rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        #about h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        #about p {
+            font-size: 1rem;
+            color: #808080;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Projects Section */
+        #projects {
+            background-color: #000080;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        #projects h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #FFFFFF; 
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .project {
+            background-color: #ADD8E6;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        /* Resize Project Images to Square */
+        .project img {
+            width: 200px;
+            height: 300px; 
+            margin-bottom: 1rem;
+            object-fit: cover; /* Ensures the image covers the square area */
+        }
+
+     
+        .project h3 {
+            color: #808080; 
+            margin-top: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .project p {
+            color: #FFFFFF; 
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #ADD8E6;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        #contact p {
+            font-size: 1rem;
+            color: #808080;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000080;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                padding: 0;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            #about p, #projects p {
+                font-size: 1rem;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            #about h2, #projects h2 {
+                font-size: 1.5rem;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project {
+                font-size: 1rem;
+            }
+
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DORAEMON</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About </h2>
+        <p>Doraemon is a robot cat from the future, who travels back in time to help a young boy named Nobita Nobi. Nobita is a kind-hearted, but often lazy and clumsy, student who faces various challenges in his life. Doraemon, sent by Nobita's descendants to improve his life, is equipped with futuristic gadgets from his pocket (called the 4th-dimensional pocket). These gadgets are often used to solve problems and bring about exciting, yet humorous adventures.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="d1.jpg" alt="Stand by Me Doraemon (2014)" />
+                <h3>Stand by Me Doraemon (2014)</h3>
+            </div>
+            <div class="project">
+                <img src="d2.jpg" alt="Doraemon: Nobita’s Dinosaur (1980)" />
+                <h3>Doraemon: Nobita’s Dinosaur (1980)</h3>
+            </div>
+            <div class="project">
+                <img src="d3.jpg" alt="Doraemon: Nobita's Chronicle of the Moon Exploration" />
+                <h3>Doraemon: Nobita's Chronicle of the Moon Exploration</h3>
+           </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Doraemon.com</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Doraemon Webpage</p>
+    </footer>
+</body>
+</html>
